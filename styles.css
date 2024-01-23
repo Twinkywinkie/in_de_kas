@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'stamp_rspk_onelight';
+  src: url('stamprspkone-light-webfont.woff2') format('woff2'),
+       url('stamprspkone-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'stamp_rspk_oneregular';
+  src: url('stamprspkone-regular-webfont.woff2') format('woff2'),
+       url('stamprspkone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  width: 375px; 
+}
+
+body {
+  background-color: #EFE6CD;
+}
+
+.invisable {
+  color: transparent;
+  font-size: 1px;
+}
+
+h1 {
+  font-family: 'stamp_rspk_oneregular';
+}
+
+p {
+  font-family: 'stamp_rspk_onelight';
+  font-size: 16px;
+  margin: 10px;
+  
+}
+
+.logo {
+  width: 50%;
+  margin-top: 115px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+
+}
+
+main ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+ul li {
+  padding: 20px;
+  margin: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: 'stamp_rspk_oneregular';
+  color: black;
+  margin: 0;
+
+}
+
