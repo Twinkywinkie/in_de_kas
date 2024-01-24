@@ -115,7 +115,7 @@ ul li a {
   height: 300px;
   z-index: -1;
   top: 42em;
-  right: 2em;
+  right: 1em;
 }
 
 #pijl_l {
@@ -153,5 +153,7 @@ table td {
   font-family: 'stamp_rspk_onelight';
   width: 150px;
   vertical-align: top;
+  text-decoration: none;
+  color: black;
 }
 
