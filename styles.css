@@ -286,7 +286,7 @@ p {
 .balk {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
+  margin: 25px;
 }
 
 .balk p {
