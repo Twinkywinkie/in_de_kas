@@ -46,6 +46,63 @@ p {
   
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#button_one {
+  width:50px;
+  padding: 10px 45px 10px 15px;
+  margin-left: 10px;
+  margin-right: 7px; 
+}
+
+#button_two {
+  width: 70px;
+  padding: 10px 25px 10px 15px;
+  margin-right: 7px;
+}
+
+#button_three {
+  width: 50px;
+  padding: 10px 45px 10px 15px;
+  margin-right: 7px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: 'stamp_rspk_oneregular';
+  color: black;
+  margin: 0;
+}
+
+#first {
+  justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  margin-left: 10px;
+}
+
+#second {
+  justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  margin-left: 126px;
+}
+
+#third {
+  justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  margin-left: 242px;
+}
+
 #textbox_left {
   width: 70%;
 }
@@ -74,24 +131,7 @@ p {
 
 }
 
-main ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-}
 
-ul li {
-  padding: 20px;
-  margin: 0;
-}
-
-ul li a {
-  text-decoration: none;
-  font-family: 'stamp_rspk_oneregular';
-  color: black;
-  margin: 0;
-}
 
 .gallerij {
   display: flex;
@@ -121,9 +161,9 @@ ul li a {
 
 #pijl_l {
   position: absolute;
-  height: 290px;
+  height: 270px;
   z-index: -1;
-  top: 65em;
+  top: 66em;
   left: 1em;
 }
 
