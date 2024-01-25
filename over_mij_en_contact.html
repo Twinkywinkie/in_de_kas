@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over mij & contact</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
-</head>
-<body>
-<header>
-
-</header>
-<main>
-    <h1>Over mij</h1>
-        <p>Mijn naam is Quincy, ik ben student Communication and Multimedia Design aan de HVA. in het verleden heb ik de koksopleiding gevold en in verschillende horecagelegenheden gewerkt, zoals het Hilton en een restaurant in Egmond aan zee. Ik heb hierdoor veel interesse in eten gekregen en ben ik ook redelijk thuis in de keuken.</p>
-        <p>In de zomer ben ik ook vaak op het terras te vinden en het hele jaar door ga ik regelmatig uit eten, om zo veel mogelijk verschillende dingen te kunnen proeven.</p>
-    <h2>Contact</h2>
-        <table>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Over mij & contact</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+   </head>
+   <body>
+      <header>
+         <ul class="navbar" id="navbar">
+            <li><a href="index.html">Begin- scherm</a></li>
+            <li><a href="over_restaurant_de_kas.html">Over Restaurant De Kas</a></li>
+            <li><a href="mijn_mening_en_ervaring.html">Mijn mening & ervaring</a></li>
+            <li id="active"><a href="over_mij_en_contact.html" id="omc">Over mij & contact</a></li>
+            <a class="close" href="#"><img src="img/sluit.png" alt="close"></a>
+         </ul>
+         <div class="header"> 
+            <a href="index.html"><img src="img/kas_klein.png" alt="logo klein" id="klein_logo"></a>
+            <a class="hamburger" href="#navbar"><img src="img/hamburger.png" alt="menu"></a>
+         </div>
+      </header>
+      <main>
+         <h1>Over mij</h1>
+         <p>Mijn naam is Quincy, ik ben student Communication and Multimedia Design aan de HVA. in het verleden heb ik de koksopleiding gevold en in verschillende horecagelegenheden gewerkt, zoals het Hilton en een restaurant in Egmond aan zee. Ik heb hierdoor veel interesse in eten gekregen en ben ik ook redelijk thuis in de keuken.</p>
+         <p>In de zomer ben ik ook vaak op het terras te vinden en het hele jaar door ga ik regelmatig uit eten, om zo veel mogelijk verschillende dingen te kunnen proeven.</p>
+         <h2>Contact</h2>
+         <table>
             <tr>
-                <td>E-mail:</td>
-                <td>-</td>
+               <td>E-mail:</td>
+               <td>-</td>
             </tr>
             <tr>
-                <td>Telefoonnummer:</td>
-                <td>06-12345678</td>
+               <td>Telefoonnummer:</td>
+               <td>06-12345678</td>
             </tr>
             <tr>
-                <td>Adres:</td>
-                <td>Amstelcampus Wibautstraat 2<br>1091 GM, Amsterdam</td>
+               <td>Adres:</td>
+               <td>Amstelcampus Wibautstraat 2<br>1091 GM, Amsterdam</td>
             </tr>
-        </table>
-        <h2>Credits</h2>
-        <table>
+         </table>
+         <h2>Credits</h2>
+         <table>
             <tr>
-                <td>Gebruikte font:</td>
-                <td>https://www.lrctype.com/</td>
+               <td>Gebruikte font:</td>
+               <td>https://www.lrctype.com/</td>
             </tr>
-        </table>
-</main>
-<footer>
-
-</footer>
-</body>
+         </table>
+      </main>
+      <footer>
+         <h2>Nieuwsbrief</h2>
+         <p>Wil je op de hoogte blijven over alles van Eten in De Kas, meld je dan aan voor de nieuwsbrief met je E-mail.</p>
+         <form action="">
+            <input type="email" id="email" name="email" placeholder="Vul hier je E-mail in" required>
+            <input type="submit" id="submit" value="Abboneer">
+            <input type="checkbox" id="checkbox" name="algemene_voorwaarden" value="algemene_voorwaarden" required>
+            <label for="algemene_voorwaarden" class="algemene_voorwaarden"> Ik ga akkoord met de <a href="algemene_voorwaarden.html" class="algemene_voorwaarden">algemene voorwaarden</a>*</label>
+         </form>
+         <div class="footer_nav">
+            <ul>
+               <li><a href="over_mij_en_contact.html">Over mij</a></li>
+               <li><a href="over_mij_en_contact.html">Contact</a></li>
+               <li><a href="over_mij_en_contact.html">Credits</a></li>
+               <li><a href="https://www.instagram.com/eten.uitdekas?igsh=MXVjZWdmMTI2Zm9nYQ%3D%3D&utm_source=qr" class="insta"><img src="img/insta.png" alt="logo instagram"></a></li>
+            </ul>
+         </div>
+         <p id="rights">CMD student Quincy Kapenga, Uit De Kas 2024©</p>
+      </footer>
+   </body>
 </html>

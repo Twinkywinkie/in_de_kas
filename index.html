@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eten uit de kas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
-</head>
-<body>    
-
-    <header>
-
-    </header>
-
-    <main>
-
-        <img src="img/eten_uit_de_kas.png" alt="logo" class="logo">
-        <h1 class="invisable">Eten uit De Kas</h1>
-            <p>Duurzaam eten wordt steeds populairder in Amsterdam, zo staat dit ook centraal bij Restaurant De Kas. Dit is een restaurant in Amsterdam oost, waar zij voor het grootste deel zelf hun ingrediënten kweken. Op het moment hebben zij één Michelin ster en één groen Michelin ster, dit is goed terug te zien in de gerechten die zij serveren.</p>
-
-        <div class="home_nav">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Eten uit de kas</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+   </head>
+   <body>
+      <header>
+         <ul class="navbar" id="navbar">
+            <li id="active"><a href="index.html">Begin- scherm</a></li>
+            <li><a href="over_restaurant_de_kas.html">Over Restaurant De Kas</a></li>
+            <li><a href="mijn_mening_en_ervaring.html">Mijn mening & ervaring</a></li>
+            <li><a href="over_mij_en_contact.html" id="omc">Over mij & contact</a></li>
+            <a class="close" href="#"><img src="img/sluit.png" alt="close"></a>
+         </ul>
+         <div class="header"> 
+            <a href="index.html"><img src="img/kas_klein.png" alt="logo klein" id="klein_logo"></a>
+            <a class="hamburger" href="#navbar"><img src="img/hamburger.png" alt="menu"></a>
+         </div>
+      </header>
+      <main>
+         <div class="logo">
+            <img src="img/eten_uit_de_kas.png" alt="logo">
+         </div>
+         <h1 class="invisable">Eten uit De Kas</h1>
+         <p>Duurzaam eten wordt steeds populairder in Amsterdam, zo staat dit ook centraal bij Restaurant De Kas. Dit is een restaurant in Amsterdam oost, waar zij voor het grootste deel zelf hun ingrediënten kweken. Op het moment hebben zij één Michelin ster en één groen Michelin ster, dit is goed terug te zien in de gerechten die zij serveren.</p>
+         <div class="home_nav">
+            <img src="img/knop.png" alt="knop naar over restaurant de kas" id="first">
+            <img src="img/knop.png" alt="knop naar Mijn mening & ervaring" id="second">    
+            <img src="img/knop.png" alt="knop naar over mij & contact" id="third"> 
             <ul>
-                <img src="img/knop.png" alt="knop naar over restaurant de kas" id="first">
-                <img src="img/knop.png" alt="knop naar Mijn mening & ervaring" id="second">
-                <img src="img/knop.png" alt="knop naar over mij & contact" id="third">
-                <li id="button_one"><a href="over_restaurant_de_kas.html">Over Restaurant De Kas</a></li>
-                <li id="button_two"><a href="mijn_mening_en_ervaring.html">Mijn mening & ervaring</a></li>
-                <li id="button_three"><a href="over_mij_en_contact.html">Over mij & contact</a></li>
+               <li id="button_one"><a href="over_restaurant_de_kas.html">Over Restaurant De Kas</a></li>
+               <li id="button_two"><a href="mijn_mening_en_ervaring.html">Mijn mening & ervaring</a></li>
+               <li id="button_three"><a href="over_mij_en_contact.html">Over mij & contact</a></li>
             </ul>
-        </div>
-
-        <h2>Impressie</h2>
-
-            <div class="gallerij">
-                <img src="img/kas_buiten.jpg" alt="foto buiten Restaurant De Kas">
-                <img src="img/menu.jpg" alt="foto menu">
-                <img src="img/wijn.jpg" alt="foto rode wijn die wordt geschonken">
-                <img src="img/bestek_wijnglazen.jpg" alt="foto wijnglazen en bestek">
-                <img src="img/kas_paars.jpg" alt="foto binnenkant kas met paars licht">
-                <img src="img/cocktail_1.jpg" alt="foto cocktail met ijs">
-                <img src="img/cocktail_2.jpg" alt="foto cocktail met sinaasappel">
-                <img src="img/kas_schoorsteen_buiten.jpg" alt="foto van de kas met schoorsteen">
-            </div>
-
-    </main>
-
-    <footer>
-
-    </footer>
-
-</body>
+         </div>
+         <h2>Impressie</h2>
+         <div class="gallerij">
+            <img src="img/kas_buiten.jpg" alt="foto buiten Restaurant De Kas">
+            <img src="img/menu.jpg" alt="foto menu">
+            <img src="img/wijn.jpg" alt="foto rode wijn die wordt geschonken">
+            <img src="img/bestek_wijnglazen.jpg" alt="foto wijnglazen en bestek">
+            <img src="img/kas_paars.jpg" alt="foto binnenkant kas met paars licht">
+            <img src="img/cocktail_1.jpg" alt="foto cocktail met ijs">
+            <img src="img/cocktail_2.jpg" alt="foto cocktail met sinaasappel">
+            <img src="img/kas_schoorsteen_buiten.jpg" alt="foto van de kas met schoorsteen">
+         </div>
+      </main>
+      <footer>
+         <h2>Nieuwsbrief</h2>
+         <p>Wil je op de hoogte blijven over alles van Eten in De Kas, meld je dan aan voor de nieuwsbrief met je E-mail.</p>
+         <form action="">
+            <input type="email" id="email" name="email" placeholder="Vul hier je E-mail in" required>
+            <input type="submit" id="submit" value="Abboneer">
+            <input type="checkbox" id="checkbox" name="algemene_voorwaarden" value="algemene_voorwaarden" required>
+            <label for="algemene_voorwaarden" class="algemene_voorwaarden"> Ik ga akkoord met de <a href="algemene_voorwaarden.html" class="algemene_voorwaarden">algemene voorwaarden</a>*</label>
+         </form>
+         <div class="footer_nav">
+            <ul>
+               <li><a href="over_mij_en_contact.html">Over mij</a></li>
+               <li><a href="over_mij_en_contact.html">Contact</a></li>
+               <li><a href="over_mij_en_contact.html">Credits</a></li>
+               <li><a href="https://www.instagram.com/eten.uitdekas?igsh=MXVjZWdmMTI2Zm9nYQ%3D%3D&utm_source=qr" class="insta"><img src="img/insta.png" alt="logo instagram"></a></li>
+            </ul>
+         </div>
+         <p id="rights">CMD student Quincy Kapenga, Uit De Kas 2024©</p>
+      </footer>
+   </body>
 </html>

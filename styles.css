@@ -16,8 +16,105 @@
 
 }
 
+html {
+height: 100%;
+}
+
 body {
   background-color: #EFE6CD;
+  width: 375px;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  background-color: #7D8758;
+  border-bottom-style: solid;
+}
+
+#klein_logo {
+  width: 50px;
+  margin: 10px;
+}
+
+.hamburger, .close {
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+}
+
+.hamburger img, .close img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 667px;
+  overflow: hidden;
+  list-style: none;
+  background-color: #5E6542;
+  border-left-style: solid;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+
+.navbar:target {
+  transform: translateY(0);
+}
+
+.navbar li {
+  background-color: #BCB088;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-style: solid;
+}
+
+#active {
+  background-color: #918560; 
+}
+
+.navbar li a {
+  width: 80px;
+  display: block;
+  font-family: 'stamp_rspk_oneregular';
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+#omc {
+  padding-right: 20px;
+}
+
+
+main {
+  margin-top: 20%;
+  margin-bottom: 10%;
 }
 
 .invisable {
@@ -46,33 +143,31 @@ p {
   
 }
 
-ul {
+.home_nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   padding: 0;
 }
 
 #button_one {
-  width:50px;
-  padding: 10px 45px 10px 15px;
-  margin-left: 10px;
-  margin-right: 7px; 
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 25px;
 }
 
 #button_two {
   width: 70px;
-  padding: 10px 25px 10px 15px;
-  margin-right: 7px;
+  margin-top: 10px;
+  margin-left: 73px;
 }
 
 #button_three {
   width: 50px;
-  padding: 10px 45px 10px 15px;
-  margin-right: 7px;
+  margin-top: 10px;
+  margin-left: 53px;
 }
 
-ul li a {
+.home_nav ul li a {
   text-decoration: none;
   font-family: 'stamp_rspk_oneregular';
   color: black;
@@ -92,7 +187,7 @@ ul li a {
   position: absolute;
   z-index: -1;
   width: 30%;
-  margin-left: 126px;
+  margin-left: 132px;
 }
 
 #third {
@@ -100,7 +195,7 @@ ul li a {
   position: absolute;
   z-index: -1;
   width: 30%;
-  margin-left: 242px;
+  margin-left: 255px;
 }
 
 #textbox_left {
@@ -108,7 +203,7 @@ ul li a {
 }
 
 #textbox_right {
-  width: 70%;
+  width: 345px;
   text-align: right;
   padding-left: 25%;
 }
@@ -117,17 +212,15 @@ ul li a {
   font-size: 24px;
   text-align: center;
   margin-left: 15%;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-right: 15%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
-.logo {
+.logo img{
   width: 50%;
-  margin-top: 3em;
   margin-left: 25%;
   margin-right: 25%;
-
 
 }
 
@@ -141,7 +234,7 @@ ul li a {
 }
 
 .gallerij img {
-  height: 129px;
+  height: 138px;
   padding: 1px;
   filter: grayscale(50%);
 }
@@ -161,9 +254,9 @@ ul li a {
 
 #pijl_l {
   position: absolute;
-  height: 270px;
+  height: 290px;
   z-index: -1;
-  top: 66em;
+  top: 65em;
   left: 1em;
 }
 
@@ -232,5 +325,77 @@ table td {
   vertical-align: top;
   text-decoration: none;
   color: black;
+}
+footer {
+  position: absolute;
+  width: 375px;
+  background-color: #7D8758;
+  z-index: -2;
+ 
+  border-top-style: solid;
+  border-color: black;
+}
+
+.footer_nav ul {
+  margin-left: 10px;
+  padding: 0;
+ list-style: none;
+}
+
+.footer_nav ul li a {
+ font-family: 'stamp_rspk_onelight';
+ font-size: 20px;
+ color: black;
+ line-height: 30px;
+}
+
+.footer_nav img {
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 147.5px;
+}
+
+.background_footer {
+  position: absolute;
+  z-index: -1;
+}
+
+#email{
+  font-family: 'stamp_rspk_onelight';
+  font-size: 16px;
+  width: 55%;
+  height: 24px;
+  margin-left: 10px;
+}
+
+#submit {
+  font-family: 'stamp_rspk_onelight';
+  font-size: 20px;
+  margin-right: 40px;
+  background-color: #BCB088;
+  border-style: solid;
+  border-color: black;
+  width: 28%;
+}
+
+#checkbox {
+margin-left: 10px;
+}
+
+.algemene_voorwaarden {
+  font-family: 'stamp_rspk_onelight';
+  font-size: 16px;
+  color: black;
+}
+
+#rights {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
+
+ol {
+  font-family: 'stamp_rspk_onelight';
+  margin: 30px;
 }
 
